@@ -3,7 +3,7 @@
 class DataBaseConfig
 {
     public $servername;
-    public $username;
+    public $email;
     public $password;
     public $databasename;
 
@@ -11,7 +11,7 @@ class DataBaseConfig
     {
 
         $this->servername = 'localhost';
-        $this->username = 'root';
+        $this->email = 'root';
         $this->password = '';
         $this->databasename = 'test1';
 
