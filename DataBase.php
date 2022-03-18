@@ -60,7 +60,7 @@ class DataBase
         $email = $this->prepareData($email);
         $password = password_hash($password, PASSWORD_DEFAULT);
         $this->sql =
-            "INSERT INTO " . $table . " (fullname, cellnumber, password, email) VALUES ('" . $fullname . "','" . $username . "','" . $password . "','" . $email . "')";
+            "INSERT INTO " . $table . " (fullname, cellnumber, password, email) VALUES ('" . $fullname . "','" . $cellnumber . "','" . $password . "','" . $email . "')";
         if (mysqli_query($this->connect, $this->sql)) {
             return true;
         } else return false;
